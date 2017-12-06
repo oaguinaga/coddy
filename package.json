@@ -1,18 +1,18 @@
 {
-  "name": "webpack-es6-sass-setup",
+  "name": "coddy",
   "version": "0.0.1",
-  "description": "A sample setup for Webpack with ES6 and Sass",
+  "description": "A web app to learn Flexbox and CSS grid",
   "main": "webpack.config.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --port 3001 --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "./node_modules/.bin/webpack --config webpack.config.js"
   },
-  "author": "Aki Karkkainen",
+  "author": "Omar Aguinaga",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/akikoo/webpack-es6-sass-setup.git"
+    "url": "https://github.com/OmarAguinaga/coddy.git"
   },
   "browserslist": [
     "> 1%",
@@ -24,6 +24,8 @@
     "babel-loader": "^7.1.2",
     "css-loader": "^0.28.7",
     "es6-promise": "^4.1.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6",
@@ -45,6 +47,7 @@
     "webpack"
   ],
   "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.1"
+    "extract-text-webpack-plugin": "^3.0.1",
+    "inline-code-suite": "^0.1.7"
   }
 }

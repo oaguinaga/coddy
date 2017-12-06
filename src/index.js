@@ -1,7 +1,10 @@
-'use strict';
+
 
 require('./main.scss');
+require('./js/index');
 
-var appContainer = document.querySelector('#app');
+
+const appContainer = document.querySelector('#app');
 
 appContainer.innerHTML = '<div class="main-component"><h1 class="main-component__title">Welcome!</h1></div>';
+

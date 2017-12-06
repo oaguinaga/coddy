@@ -1,14 +1,14 @@
-'use strict';
 
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var styleLintPlugin = require('stylelint-webpack-plugin');
+
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 require('es6-promise').polyfill();
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.js',
 
   output: {
     path: __dirname,
@@ -20,7 +20,7 @@ module.exports = {
     new ExtractTextPlugin('css/app.css'),
 
     // Stylelint plugin
-    new styleLintPlugin({
+    new StyleLintPlugin({
       configFile: '.stylelintrc',
       context: '',
       files: '**/*.scss',
@@ -49,7 +49,8 @@ module.exports = {
             'sass-loader'
           ]
         })
-      }
+      },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
     ]
   },
 
