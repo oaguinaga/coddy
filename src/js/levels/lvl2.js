@@ -4,9 +4,8 @@
 
 const displayCSS = `
 .container {
-  /* Your code goes here
-  display: flex;
-  justify-content: center; */
+  /* Your code goes here 
+  align-items: center*/
 }`;
 
 const startCSS = `
@@ -15,17 +14,19 @@ const startCSS = `
   max-width: 960px;
   margin: 10px auto;
   min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
 }
 .box {
-  background: aquamarine;
+  background: pink;
   width: 50px;
   height: 50px;
 }
 `;
 
 const solutionCSS = {
-  display: 'flex',
-  'justify-content': 'center',
+  'align-items': 'center',
 };
 
 const hint = {

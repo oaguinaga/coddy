@@ -1,5 +1,14 @@
 /** postcss-bem-linter: define main-component; weak */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $color: #555;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 16px;
+}
 
 .main-component {
   &__title {
@@ -7,7 +16,27 @@ $color: #555;
   }
 }
 
+.next {
+  width: 100px;
+  height: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  background: #bdc3c7;
+  color: #ecf0f1;
+  pointer-events: none;
+  text-decoration: none;
+  align-items: center;
+}
+
+.active {
+  background: #e74c3c;
+  pointer-events: auto;
+}
+
 /** postcss-bem-linter: define utilities */
 .u-ellipsis {
   color: $color;
 }
+
+
