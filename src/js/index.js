@@ -59,7 +59,6 @@ document.onreadystatechange = function showEditor() {
       } else {
         nextButton.classList.remove("active");
       }
-
     };
 
 
